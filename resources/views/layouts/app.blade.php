@@ -15,6 +15,7 @@
             <nav class="flex items-center gap-8 text-sm tracking-wide text-neutral-300">
                 <a href="#home" class="transition hover:text-white">Home</a>
                 <a href="#about" class="transition hover:text-white">About</a>
+                <a href="#education" class="transition hover:text-white">Education</a>
             </nav>
         </div>
     </header>

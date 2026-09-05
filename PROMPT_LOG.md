@@ -1,72 +1,111 @@
-# PROMPT LOG
+# AI Prompt Log — Rex Decuan Luceño Jr. Portfolio
 
-## Prompt 1
+This log records every prompt given to an AI coding assistant (opencode, in VS Code) during the build of this Laravel portfolio project, what the AI produced, and what was done with that output.
 
-**Prompt:**
-
-> make a laravel project
-
-**What I produced:**
-Fresh Laravel 12.12.2 project (latest compatible with the machine's PHP 8.2; v13 requires PHP ^8.3) in `C:\xampp\htdocs\portfolio`, with app key generated, SQLite database created, and default migrations run.
-
-**What I did with it:**
+> Note: Fill in the "AI Response Summary" and "What I Did With It" sections after actually running each prompt in opencode. Do not leave these blank in your final submission — the rubric specifically checks that the log is honest and specific, not just pasted output.
 
 ---
 
-## Prompt 2
+## Entry 1 — Project Setup, Hero & About Section
 
-**Prompt:**
+**Prompt given:**
+```
+Ask me to confirm your plan before creating/running anything.
 
-> Create a Laravel portfolio project (MVC: routes, PortfolioController, Blade views, Tailwind via Vite). Init git.
->
-> Style reference: https://themewagon.github.io/author/ (keep dark header, hero layout, about layout skip shop/blog/testimonials).
->
-> Photo: copy C:\xampp\htdocs\portfolio\profile.jpeg to public/images/.
->
-> Build:
->  Hero: Rex Decuan Luceño Jr. , IT Student , "Innovate. Create. Elevate."
->  About: "4th year IT student aiming to build a successful career in tech and provide a good life for my family. Passionate about coding, networking, and hardware."
->
-> Commit separately: setup, hero, about.
+Create a Laravel portfolio project (MVC: routes, PortfolioController, Blade views, Tailwind via Vite). Init git.
 
-**What I produced:**
-- `npm install` (Tailwind 4 + Vite, already configured in the Laravel scaffold)
-- Copied `profile.jpeg` to `public/images/profile.jpeg`
-- `resources/views/layouts/app.blade.php` — dark header/nav + minimal footer
-- `app/Http/Controllers/PortfolioController.php` with `index()`
-- `GET /` route wired to `PortfolioController@index`
-- Removed default `welcome.blade.php`
-- `resources/views/portfolio/index.blade.php` — hero (name, IT Student, "Innovate. Create. Elevate.", photo) and about (photo + bio)
-- `git init` and three commits: `setup`, `hero`, `about`
+Style reference: https://themewagon.github.io/author/ (keep dark header, hero layout, about layout skip shop/blog/testimonials).
 
-**What I did with it:**
+Photo: copy C:\xampp\htdocs\portfolio\profile.jpeg to public/images/.
+
+Build:
+Hero: Rex Decuan Luceño Jr. , IT Student , "Innovate. Create. Elevate."
+About: "4th year IT student aiming to build a successful career in tech and provide a good life for my family. Passionate about coding, networking, and hardware."
+
+Commit separately: setup, hero, about.
+```
+
+**AI Response Summary:**
+_[Fill in: e.g., "Proposed a plan to run `laravel new`, install Tailwind via Vite, create PortfolioController and routes, and build hero.blade.php and about.blade.php. Asked for confirmation before proceeding, then generated the files after I confirmed."]_
+
+**What I Did With It:**
+_[Fill in: accepted as-is / edited (what did you change and why) / rejected (why)]_
 
 ---
 
-## Prompt 3
+## Entry 2 — Education, Skills, Certifications, Fun Fact Counters, Contact
 
-**Prompt:**
+**Prompt given:**
+```
+Ask me to confirm your plan before creating/running anything.
 
-> Add to the same project, matching template style:
->
-> Education: BS Information Technology, Data Center College of the Philippines - Bangued, Abra. Also: Abra High School - Main Campus, 2017.
->
-> Skills: Coding, Network Configuration, Hardware Deployment.
-> Certifications: TESDA CSS/NC2 - September 2025.
->
-> Fun fact counters (repurpose template's 4-counter section): Projects Completed, Years Coding, Certifications Earned, Technologies Used — placeholder numbers, comment for later edit.
->
-> Contact: lucenorexjr.913@gmail.com | 0938-780-2526 | github.com/rexdlucenojr. Add contact form (name, email, message) with validation.
->
-> Commit each section separately.
+Add to the same project, matching template style:
 
-**What I produced:**
-Five commits, each adding one section to `resources/views/portfolio/index.blade.php`:
-- `education` — BS IT (Data Center College of the Philippines, Bangued, Abra) + Abra High School Main Campus (2017)
-- `skills` — Coding, Network Configuration, Hardware Deployment
-- `certifications` — TESDA CSS/NC2, September 2025
-- `counters` — four placeholder stat counters with a `{{-- TODO --}}` comment for later edit
-- `contact` — email/phone/GitHub info cards + dark contact form; `app/Http/Controllers/ContactController.php` with `POST /contact` and server-side validation (required name/email/message, email format) + success flash message
-- Nav links for each section added incrementally in their commits
+Education: BS Information Technology, Data Center College of the Philippines - Bangued, Abra. Also: Abra High School - Main Campus, 2017.
 
-**What I did with it:**
+Skills: Coding, Network Configuration, Hardware Deployment.
+Certifications: TESDA CSS/NC2 - September 2025.
+
+Fun fact counters (repurpose template's 4-counter section): Projects Completed, Years Coding, Certifications Earned, Technologies Used — placeholder numbers, comment for later edit.
+
+Contact: lucenorexjr.913@gmail.com , 0938-780-2526, github.com/rexdlucenojr. Add contact form (name, email, message) with validation.
+
+Commit each section separately.
+```
+
+**AI Response Summary:**
+_[Fill in]_
+
+**What I Did With It:**
+_[Fill in]_
+
+---
+
+## Entry 3 — Final Styling, Responsiveness & Prompt Log Setup
+
+**Prompt given:**
+```
+Ask me to confirm your plan before creating/running or writing files.
+
+Polish styling, make responsive, remove any leftover template elements not needed for a dev portfolio. Commit: "Style layout and polish responsiveness."
+
+Create PROMPT_LOG.md logging all 3 prompts I gave you (prompt, what you produced, blank "What I did with it:" line for me). Ask before writing to it going forward too.
+
+Confirm app runs (php artisan serve) and show full git log.
+```
+
+**AI Response Summary:**
+_[Fill in]_
+
+**What I Did With It:**
+_[Fill in]_
+
+---
+
+## Entry 4 — Add Certificate to Skills & Certifications Section
+
+**Prompt given:**
+```
+Ask me to confirm your plan before creating/running or moving anything.
+
+Add my certificate to the Skills & Certifications section of the portfolio, displayed alongside the TESDA CSS/NC2 - September 2025 entry (e.g., as a clickable/viewable image or "View Certificate" link).
+
+File: C:\xampp\htdocs\portfolio\CERTIF (check its actual extension first).
+
+Steps:
+1. Move (not copy) the file into public/images/certificates/ with a clear name like tesda-css-nc2.[ext].
+2. Reference it in the certifications section.
+3. Delete the original file from C:\xampp\htdocs\portfolio once it's confirmed working in its new location.
+
+Commit as: "Add certification image and relocate file"
+```
+
+**AI Response Summary:**
+_[Fill in]_
+
+**What I Did With It:**
+_[Fill in]_
+
+---
+
+*(Additional entries will be appended below as more prompts are given during development, following the same format.)*

@@ -117,4 +117,84 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="bg-neutral-950">
+        <div class="mx-auto max-w-6xl px-6 py-24">
+            <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Contact</p>
+            <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
+                Get In <span class="text-emerald-400">Touch</span>
+            </h2>
+
+            <div class="mt-16 grid gap-8 lg:grid-cols-2">
+                <div class="space-y-6">
+                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
+                        <p class="text-sm uppercase tracking-widest text-neutral-400">Email</p>
+                        <a href="mailto:lucenorexjr.913@gmail.com" class="mt-1 block text-lg font-semibold break-all text-neutral-100 transition hover:text-emerald-400">
+                            lucenorexjr.913@gmail.com
+                        </a>
+                    </div>
+                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
+                        <p class="text-sm uppercase tracking-widest text-neutral-400">Phone</p>
+                        <a href="tel:09387802526" class="mt-1 block text-lg font-semibold text-neutral-100 transition hover:text-emerald-400">
+                            0938-780-2526
+                        </a>
+                    </div>
+                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
+                        <p class="text-sm uppercase tracking-widest text-neutral-400">GitHub</p>
+                        <a href="https://github.com/rexdlucenojr" target="_blank" rel="noopener noreferrer"
+                            class="mt-1 block text-lg font-semibold break-all text-neutral-100 transition hover:text-emerald-400">
+                            github.com/rexdlucenojr
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-8">
+                    @if (session('success'))
+                        <div class="mb-6 rounded-sm border border-emerald-400/40 bg-emerald-400/10 p-4 text-emerald-300">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    <form method="POST" action="{{ route('contact.submit') }}" class="space-y-5">
+                        @csrf
+
+                        <div>
+                            <label for="name" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Name</label>
+                            <input type="text" id="name" name="name" value="{{ old('name') }}"
+                                class="w-full border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
+                                placeholder="Your name">
+                            @error('name')
+                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div>
+                            <label for="email" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Email</label>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}"
+                                class="w-full border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
+                                placeholder="you@example.com">
+                            @error('email')
+                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div>
+                            <label for="message" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full resize-none border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
+                                placeholder="Write your message...">{{ old('message') }}</textarea>
+                            @error('message')
+                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <button type="submit"
+                            class="rounded-sm bg-emerald-400 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-neutral-950 transition hover:bg-emerald-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

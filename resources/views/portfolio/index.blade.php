@@ -23,4 +23,23 @@
             </div>
         </div>
     </section>
+
+    <section id="about" class="bg-neutral-900">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[2fr_3fr]">
+            <div class="mx-auto w-full max-w-sm">
+                <img src="{{ asset('images/profile.jpeg') }}" alt="About Rex Decuan Luceño Jr."
+                    class="aspect-[3/4] w-full rounded-sm object-cover ring-1 ring-neutral-700">
+            </div>
+            <div>
+                <p class="mb-4 text-sm uppercase tracking-[0.35em] text-neutral-400">About me</p>
+                <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+                    Rex Decuan <span class="text-neutral-400">Luceño Jr.</span>
+                </h2>
+                <p class="mt-6 text-lg leading-relaxed text-neutral-300">
+                    4th year IT student aiming to build a successful career in tech and provide a good
+                    life for my family. Passionate about coding, networking, and hardware.
+                </p>
+            </div>
+        </div>
+    </section>
 @endsection

@@ -63,4 +63,20 @@
             </div>
         </div>
     </section>
+
+    <section id="skills" class="bg-neutral-900">
+        <div class="mx-auto max-w-6xl px-6 py-24">
+            <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Skills</p>
+            <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
+                What I'm <span class="text-emerald-400">Good At</span>
+            </h2>
+            <div class="mt-16 grid gap-6 md:grid-cols-3">
+                @foreach (['Coding', 'Network Configuration', 'Hardware Deployment'] as $skill)
+                    <div class="rounded-sm border border-neutral-800 bg-neutral-950 p-8 text-center transition hover:border-emerald-400/50">
+                        <p class="text-lg font-semibold text-neutral-100">{{ $skill }}</p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
 @endsection

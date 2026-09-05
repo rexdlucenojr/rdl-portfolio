@@ -17,6 +17,7 @@
                 <a href="#about" class="transition hover:text-white">About</a>
                 <a href="#education" class="transition hover:text-white">Education</a>
                 <a href="#skills" class="transition hover:text-white">Skills</a>
+                <a href="#certifications" class="transition hover:text-white">Certifications</a>
             </nav>
         </div>
     </header>

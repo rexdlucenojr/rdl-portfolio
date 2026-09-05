@@ -79,4 +79,18 @@
             </div>
         </div>
     </section>
+
+    <section id="certifications" class="bg-neutral-950">
+        <div class="mx-auto max-w-6xl px-6 py-24">
+            <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Certifications</p>
+            <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
+                Credentials I've <span class="text-emerald-400">Earned</span>
+            </h2>
+            <div class="mx-auto mt-16 max-w-2xl rounded-sm border border-neutral-800 bg-neutral-900 p-8 text-center transition hover:border-emerald-400/50">
+                <p class="text-2xl font-bold text-emerald-400">TESDA CSS / NC2</p>
+                <p class="mt-2 text-sm uppercase tracking-widest text-neutral-400">Computer Systems Servicing, National Certificate II</p>
+                <p class="mt-4 text-neutral-300">September 2025</p>
+            </div>
+        </div>
+    </section>
 @endsection

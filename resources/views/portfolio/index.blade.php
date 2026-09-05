@@ -54,6 +54,10 @@
                     <p class="text-sm uppercase tracking-widest text-emerald-400">Bachelor of Science in Information Technology</p>
                     <h3 class="mt-3 text-xl font-bold text-neutral-100">Data Center College of the Philippines</h3>
                     <p class="mt-1 text-sm text-neutral-400">Bangued, Abra</p>
+                    <a href="{{ asset('images/certificates/ched-certificate.pdf') }}" target="_blank" rel="noopener noreferrer"
+                        class="mt-6 inline-flex items-center gap-2 rounded-sm border border-neutral-700 px-4 py-2 text-xs uppercase tracking-widest text-neutral-300 transition hover:border-emerald-400 hover:text-emerald-300">
+                        View Certificate
+                    </a>
                 </div>
                 <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-8 transition hover:border-emerald-400/50">
                     <p class="text-sm uppercase tracking-widest text-emerald-400">Secondary</p>
@@ -86,10 +90,20 @@
             <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
                 Credentials I've <span class="text-emerald-400">Earned</span>
             </h2>
-            <div class="mx-auto mt-16 max-w-2xl rounded-sm border border-neutral-800 bg-neutral-900 p-8 text-center transition hover:border-emerald-400/50">
-                <p class="text-2xl font-bold text-emerald-400">TESDA CSS / NC2</p>
-                <p class="mt-2 text-sm uppercase tracking-widest text-neutral-400">Computer Systems Servicing, National Certificate II</p>
-                <p class="mt-4 text-neutral-300">September 2025</p>
+            <div class="mx-auto mt-16 grid max-w-4xl gap-6 md:grid-cols-2">
+                <div class="flex flex-col rounded-sm border border-neutral-800 bg-neutral-900 p-8 text-center transition hover:border-emerald-400/50">
+                    <p class="text-2xl font-bold text-emerald-400">TESDA CSS / NC2</p>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-400">Computer Systems Servicing, National Certificate II</p>
+                    <p class="mt-4 text-neutral-300">September 2025</p>
+                </div>
+                <div class="flex flex-col rounded-sm border border-neutral-800 bg-neutral-900 p-8 text-center transition hover:border-emerald-400/50">
+                    <p class="text-2xl font-bold text-emerald-400">DICT Netiquette</p>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-400">Online Safety Through Netiquette</p>
+                    <a href="{{ asset('images/certificates/dict-netiquette.pdf') }}" target="_blank" rel="noopener noreferrer"
+                        class="mt-6 inline-flex items-center justify-center gap-2 rounded-sm border border-emerald-400/60 px-5 py-2.5 text-sm uppercase tracking-widest text-emerald-300 transition hover:bg-emerald-400 hover:text-neutral-950">
+                        View Certificate
+                    </a>
+                </div>
             </div>
         </div>
     </section>

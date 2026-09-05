@@ -5,7 +5,7 @@
         <div class="mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2">
             <div>
                 <p class="mb-6 text-sm uppercase tracking-[0.35em] text-neutral-400">Hello! I'm</p>
-                <h1 class="text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
+                <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                     Rex
                     <span class="block text-neutral-400">Decuan</span>
                     <span class="block">Luceño Jr.</span>
@@ -24,7 +24,7 @@
         </div>
     </section>
 
-    <section id="about" class="bg-neutral-900">
+    <section id="about" class="scroll-mt-20 bg-neutral-900">
         <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[2fr_3fr]">
             <div class="mx-auto w-full max-w-sm">
                 <img src="{{ asset('images/profile.jpeg') }}" alt="About Rex Decuan Luceño Jr."
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section id="education" class="bg-neutral-950">
+    <section id="education" class="scroll-mt-20 bg-neutral-950">
         <div class="mx-auto max-w-6xl px-6 py-24">
             <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Education</p>
             <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <section id="skills" class="bg-neutral-900">
+    <section id="skills" class="scroll-mt-20 bg-neutral-900">
         <div class="mx-auto max-w-6xl px-6 py-24">
             <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Skills</p>
             <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section id="certifications" class="bg-neutral-950">
+    <section id="certifications" class="scroll-mt-20 bg-neutral-950">
         <div class="mx-auto max-w-6xl px-6 py-24">
             <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Certifications</p>
             <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section id="counters" class="bg-neutral-900">
+    <section id="counters" class="scroll-mt-20 bg-neutral-900">
         <div class="mx-auto max-w-6xl px-6 py-16">
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {{-- TODO: Update placeholder numbers below with real stats --}}
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <section id="contact" class="bg-neutral-950">
+    <section id="contact" class="scroll-mt-20 bg-neutral-950">
         <div class="mx-auto max-w-6xl px-6 py-24">
             <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Contact</p>
             <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">

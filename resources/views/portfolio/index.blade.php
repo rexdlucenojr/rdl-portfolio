@@ -93,4 +93,28 @@
             </div>
         </div>
     </section>
+
+    <section id="counters" class="bg-neutral-900">
+        <div class="mx-auto max-w-6xl px-6 py-16">
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                {{-- TODO: Update placeholder numbers below with real stats --}}
+                <div class="text-center">
+                    <span class="block text-5xl font-black text-emerald-400">3</span>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-300">Projects Completed</p>
+                </div>
+                <div class="text-center">
+                    <span class="block text-5xl font-black text-emerald-400">2</span>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-300">Years Coding</p>
+                </div>
+                <div class="text-center">
+                    <span class="block text-5xl font-black text-emerald-400">1</span>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-300">Certifications Earned</p>
+                </div>
+                <div class="text-center">
+                    <span class="block text-5xl font-black text-emerald-400">5</span>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-neutral-300">Technologies Used</p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

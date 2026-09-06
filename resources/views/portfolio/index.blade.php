@@ -70,6 +70,21 @@
                     </a>
                 </article>
 
+                <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent md:col-span-2">
+                    <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
+                        <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-3">CHED SEEDLING Project</h3>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-6">
+                        For actively participating in the Special Episode of the 2026 Series of the Skills Enhancement, Engagement, and Development: A Learning Intervention to Nurture Grantee (SEEDLING) Project entitled &quot;STAY ALERT, STAY SECURE: PROMOTING CYBER AWARENESS AND ONLINE SCAM PREVENTION,&quot; held on July 23, 2026, from 1:30 PM - 5:00 PM.
+                    </p>
+                    <a href="{{ asset('images/certificates/ched-certificate.pdf') }}" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">
+                        View Certificate
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </article>
+
             </div>
         </div>
     </section>

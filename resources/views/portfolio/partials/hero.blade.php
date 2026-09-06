@@ -11,7 +11,7 @@
                     Hi, I'm <span class="text-accent">Rex Decuan Luceño Jr.</span>
                 </h1>
                 <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
-                    <strong class="font-medium text-zinc-700 dark:text-zinc-300">IT Student</strong>. Passionate about coding, networking, and hardware — building a career in tech through innovation, creation, and elevation.
+                    <strong class="font-medium text-zinc-700 dark:text-zinc-300">IT Student | Aspiring IT Professional</strong>. Passionate about coding, networking, and hardware — building a career in tech through innovation, creation, and elevation.
                 </p>
                 <div class="reveal d3 flex flex-wrap gap-4">
                     <a href="#about" class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">

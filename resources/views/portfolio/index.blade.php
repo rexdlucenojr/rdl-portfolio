@@ -5,30 +5,7 @@
 
     @include('portfolio.partials.about')
 
-    <section id="education" class="scroll-mt-20 bg-neutral-950">
-        <div class="mx-auto max-w-6xl px-6 py-24">
-            <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Education</p>
-            <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
-                Where I've <span class="text-emerald-400">Studied</span>
-            </h2>
-            <div class="mt-16 grid gap-6 md:grid-cols-2">
-                <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-8 transition hover:border-emerald-400/50">
-                    <p class="text-sm uppercase tracking-widest text-emerald-400">Bachelor of Science in Information Technology</p>
-                    <h3 class="mt-3 text-xl font-bold text-neutral-100">Data Center College of the Philippines</h3>
-                    <p class="mt-1 text-sm text-neutral-400">Bangued, Abra</p>
-                    <a href="{{ asset('images/certificates/ched-certificate.pdf') }}" target="_blank" rel="noopener noreferrer"
-                        class="mt-6 inline-flex items-center gap-2 rounded-sm border border-neutral-700 px-4 py-2 text-xs uppercase tracking-widest text-neutral-300 transition hover:border-emerald-400 hover:text-emerald-300">
-                        View Certificate
-                    </a>
-                </div>
-                <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-8 transition hover:border-emerald-400/50">
-                    <p class="text-sm uppercase tracking-widest text-emerald-400">Secondary</p>
-                    <h3 class="mt-3 text-xl font-bold text-neutral-100">Abra High School - Main Campus</h3>
-                    <p class="mt-1 text-sm text-neutral-400">Class of 2017</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('portfolio.partials.education')
 
     <section id="skills" class="scroll-mt-20 bg-neutral-900">
         <div class="mx-auto max-w-6xl px-6 py-24">

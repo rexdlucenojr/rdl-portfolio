@@ -89,30 +89,6 @@
         </div>
     </section>
 
-    <section id="counters" class="py-16 bg-zinc-50 dark:bg-zinc-900/40">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                {{-- TODO: Update placeholder numbers below with real stats --}}
-                <div class="reveal d1 text-center">
-                    <span class="block font-display font-bold text-5xl text-zinc-900 dark:text-white">3</span>
-                    <p class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Projects Completed</p>
-                </div>
-                <div class="reveal d2 text-center">
-                    <span class="block font-display font-bold text-5xl text-zinc-900 dark:text-white">2</span>
-                    <p class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Years Coding</p>
-                </div>
-                <div class="reveal d3 text-center">
-                    <span class="block font-display font-bold text-5xl text-zinc-900 dark:text-white">1</span>
-                    <p class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Certifications Earned</p>
-                </div>
-                <div class="reveal d4 text-center">
-                    <span class="block font-display font-bold text-5xl text-zinc-900 dark:text-white">5</span>
-                    <p class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Technologies Used</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-10 md:p-16 relative overflow-hidden">

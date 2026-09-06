@@ -21,7 +21,7 @@ function applyTheme(dark) {
 }
 
 function updateSection() {
-    const ids = ['contact', 'counters', 'certifications', 'skills', 'education', 'about', 'home'];
+    const ids = ['contact', 'certifications', 'skills', 'education', 'about', 'home'];
     const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 60;
     if (atBottom) {
         setActive('contact');

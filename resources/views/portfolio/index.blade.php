@@ -98,81 +98,86 @@
         </div>
     </section>
 
-    <section id="contact" class="scroll-mt-20 bg-neutral-950">
-        <div class="mx-auto max-w-6xl px-6 py-24">
-            <p class="mb-4 text-center text-sm uppercase tracking-[0.35em] text-neutral-400">Contact</p>
-            <h2 class="text-center text-3xl font-bold tracking-tight text-neutral-100 md:text-4xl">
-                Get In <span class="text-emerald-400">Touch</span>
-            </h2>
+    <section id="contact" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-10 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
 
-            <div class="mt-16 grid gap-8 lg:grid-cols-2">
-                <div class="space-y-6">
-                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
-                        <p class="text-sm uppercase tracking-widest text-neutral-400">Email</p>
-                        <a href="mailto:lucenorexjr.913@gmail.com" class="mt-1 block text-lg font-semibold break-all text-neutral-100 transition hover:text-emerald-400">
-                            lucenorexjr.913@gmail.com
-                        </a>
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-start">
+
+                    <div>
+                        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Get in touch</p>
+                        <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-5">Let's work<br>together</h2>
+                        <p class="reveal d2 text-zinc-400 leading-relaxed mb-8">&quot;Innovate. Create. Elevate.&quot; — I'm open to opportunities in coding, networking, and hardware.</p>
+
+                        <div class="reveal d3 flex flex-col gap-4">
+                            <a href="mailto:lucenorexjr.913@gmail.com" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+                                <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                                </span>
+                                <span class="text-sm">lucenorexjr.913@gmail.com</span>
+                            </a>
+                            <a href="tel:09387802526" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+                                <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                                </span>
+                                <span class="text-sm">0938-780-2526</span>
+                            </a>
+                            <a href="https://github.com/rexdlucenojr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+                                <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </span>
+                                <span class="text-sm">github.com/rexdlucenojr</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
-                        <p class="text-sm uppercase tracking-widest text-neutral-400">Phone</p>
-                        <a href="tel:09387802526" class="mt-1 block text-lg font-semibold text-neutral-100 transition hover:text-emerald-400">
-                            0938-780-2526
-                        </a>
+
+                    <div class="reveal d2">
+                        @if (session('success'))
+                            <div class="mb-6 rounded-xl border border-accent/40 bg-accent/10 p-4 text-accent-light">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        <form method="POST" action="{{ route('contact.submit') }}" class="flex flex-col gap-4">
+                            @csrf
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-xs font-medium text-zinc-400 mb-1.5">Name</label>
+                                    <input type="text" id="name" name="name" value="{{ old('name') }}" autocomplete="name"
+                                        class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
+                                        placeholder="Your name">
+                                    @error('name')
+                                        <p class="mt-1 text-xs text-red-400">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-xs font-medium text-zinc-400 mb-1.5">Email</label>
+                                    <input type="email" id="email" name="email" value="{{ old('email') }}" autocomplete="email"
+                                        class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
+                                        placeholder="you@example.com">
+                                    @error('email')
+                                        <p class="mt-1 text-xs text-red-400">{{ $message }}</p>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-xs font-medium text-zinc-400 mb-1.5">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full resize-none bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
+                                    placeholder="Write your message...">{{ old('message') }}</textarea>
+                                @error('message')
+                                    <p class="mt-1 text-xs text-red-400">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <button type="submit" class="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors">
+                                Send Message
+                            </button>
+                        </form>
                     </div>
-                    <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-6">
-                        <p class="text-sm uppercase tracking-widest text-neutral-400">GitHub</p>
-                        <a href="https://github.com/rexdlucenojr" target="_blank" rel="noopener noreferrer"
-                            class="mt-1 block text-lg font-semibold break-all text-neutral-100 transition hover:text-emerald-400">
-                            github.com/rexdlucenojr
-                        </a>
-                    </div>
-                </div>
 
-                <div class="rounded-sm border border-neutral-800 bg-neutral-900 p-8">
-                    @if (session('success'))
-                        <div class="mb-6 rounded-sm border border-emerald-400/40 bg-emerald-400/10 p-4 text-emerald-300">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-
-                    <form method="POST" action="{{ route('contact.submit') }}" class="space-y-5">
-                        @csrf
-
-                        <div>
-                            <label for="name" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Name</label>
-                            <input type="text" id="name" name="name" value="{{ old('name') }}"
-                                class="w-full border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
-                                placeholder="Your name">
-                            @error('name')
-                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div>
-                            <label for="email" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Email</label>
-                            <input type="email" id="email" name="email" value="{{ old('email') }}"
-                                class="w-full border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
-                                placeholder="you@example.com">
-                            @error('email')
-                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div>
-                            <label for="message" class="mb-2 block text-sm uppercase tracking-widest text-neutral-400">Message</label>
-                            <textarea id="message" name="message" rows="5"
-                                class="w-full resize-none border border-neutral-700 bg-neutral-950 p-4 text-neutral-100 placeholder-neutral-500 transition focus:border-emerald-400 focus:outline-none"
-                                placeholder="Write your message...">{{ old('message') }}</textarea>
-                            @error('message')
-                                <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <button type="submit"
-                            class="rounded-sm bg-emerald-400 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-neutral-950 transition hover:bg-emerald-300">
-                            Send Message
-                        </button>
-                    </form>
                 </div>
             </div>
         </div>

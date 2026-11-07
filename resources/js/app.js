@@ -104,4 +104,123 @@ if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
 }
 
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!reduceMotion) {
+    const sections = document.querySelectorAll('main > section');
+
+    if (sections.length && 'IntersectionObserver' in window) {
+        document.body.classList.add('sections-ready');
+
+        const sectionIO = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('creep-in');
+                        sectionIO.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.08, rootMargin: '0px 0px -60px 0px' },
+        );
+
+        sections.forEach((section) => sectionIO.observe(section));
+    }
+
+    const flicker = () => {
+        htmlEl.classList.add('lights-flicker');
+        const duration = 600 + Math.random() * 700;
+
+        window.setTimeout(() => htmlEl.classList.remove('lights-flicker'), duration);
+        window.setTimeout(flicker, duration + 5000 + Math.random() * 9000);
+    };
+
+    window.setTimeout(flicker, 3000);
+}
+
+const trailCanvas = document.getElementById('cursor-trail');
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+if (trailCanvas && !reduceMotion && finePointer) {
+    const ctx = trailCanvas.getContext('2d');
+
+    if (ctx) {
+        let points = [];
+        let rafId = null;
+        let dpr = 1;
+        let lastPointAt = 0;
+
+        const resizeTrail = () => {
+            dpr = Math.max(
+                0.5,
+                Math.min(
+                    window.devicePixelRatio || 1,
+                    2,
+                    1440 / window.innerWidth,
+                    900 / window.innerHeight,
+                ),
+            );
+            trailCanvas.width = Math.floor(window.innerWidth * dpr);
+            trailCanvas.height = Math.floor(window.innerHeight * dpr);
+            trailCanvas.style.width = `${window.innerWidth}px`;
+            trailCanvas.style.height = `${window.innerHeight}px`;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        };
+
+        const drawTrail = () => {
+            ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+            for (let i = points.length - 1; i >= 0; i--) {
+                const point = points[i];
+                point.life *= 0.88;
+
+                if (point.life < 0.025) {
+                    points.splice(i, 1);
+                    continue;
+                }
+
+                ctx.beginPath();
+                ctx.fillStyle = `rgba(179, 0, 0, ${point.life * 0.22})`;
+                ctx.arc(point.x, point.y, 2 + (1 - point.life) * 9, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            if (points.length) {
+                rafId = requestAnimationFrame(drawTrail);
+            } else {
+                rafId = null;
+                ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+            }
+        };
+
+        const addTrailPoint = (event) => {
+            if (event.pointerType && event.pointerType !== 'mouse') {
+                return;
+            }
+
+            const now = performance.now();
+            if (now - lastPointAt < 16) {
+                return;
+            }
+            lastPointAt = now;
+
+            points.push({ x: event.clientX, y: event.clientY, life: 1 });
+            if (points.length > 22) {
+                points.shift();
+            }
+
+            if (rafId === null) {
+                rafId = requestAnimationFrame(drawTrail);
+            }
+        };
+
+        resizeTrail();
+        window.addEventListener('resize', resizeTrail, { passive: true });
+        window.addEventListener('pointermove', addTrailPoint, { passive: true });
+        window.addEventListener('blur', () => {
+            points = [];
+        });
+    }
+}
+
 updateSection();

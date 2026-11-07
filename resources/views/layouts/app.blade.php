@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0a0c">
     <title>@yield('title', 'Rex Decuan Luceño Jr. — Portfolio')</title>
 
     <script>
         (function () {
             var d = localStorage.getItem('theme');
-            if (d === 'dark' || (!d && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            if (d !== 'light') {
                 document.documentElement.classList.add('dark');
             }
         })();
@@ -16,11 +17,28 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Special+Elite&family=Creepster&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+
+    <div class="horror-atmosphere" aria-hidden="true">
+        <span class="fog fog--one"></span>
+        <span class="fog fog--two"></span>
+        <span class="fog fog--three"></span>
+    </div>
+
+    <div class="film-grain" aria-hidden="true"></div>
+
+    <div class="corner-eyes corner-eyes--tl" aria-hidden="true">
+        <span></span><span></span>
+    </div>
+    <div class="corner-eyes corner-eyes--br" aria-hidden="true">
+        <span></span><span></span>
+    </div>
+
+    <canvas id="cursor-trail" aria-hidden="true"></canvas>
 
     <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
         <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">

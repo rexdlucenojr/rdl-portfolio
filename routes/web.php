@@ -4,7 +4,35 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PortfolioController::class, 'index']);
+Route::get('/', [PortfolioController::class, 'index'])->name('home');
+
+Route::view('/projects', 'portfolio.projects')->name('projects');
+
+Route::view('/cisco-networking-academy', 'portfolio.cisco-networking-academy')->name('credentials.cisco');
+
+Route::get('/img/{file}', function (string $file) {
+    $path = base_path('img/' . basename($file));
+
+    abort_unless(is_file($path), 404);
+
+    return response()->file($path, [
+        'Cache-Control' => 'public, max-age=604800',
+    ]);
+})->where('file', '[^/]+');
+
+Route::get('/files/{file}', function (string $file) {
+    $path = base_path('files/' . basename($file));
+
+    if (! is_file($path)) {
+        $path = public_path('files/' . basename($file));
+    }
+
+    abort_unless(is_file($path), 404);
+
+    return response()->file($path, [
+        'Cache-Control' => 'public, max-age=604800',
+    ]);
+})->where('file', '[^/]+');
 
 Route::get('/designs', fn () => view('portfolio.designs'))->name('designs');
 Route::view('/design/aurora', 'portfolio.variants.aurora')->name('design.aurora');

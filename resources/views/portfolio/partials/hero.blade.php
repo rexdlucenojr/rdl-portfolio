@@ -6,10 +6,14 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
 
             <div>
-                <p class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4">IT Student</p>
+                <p class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4">IT Student<span class="status-tag">Open for work</span></p>
                 <h1 class="reveal d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
-                    Hi, I'm <span class="text-accent">Rex Decuan Luceño Jr.</span>
+                    Hi, I'm <span class="hero-name text-accent" data-text="Rex Decuan Luceño Jr.">Rex Decuan Luceño Jr.</span>
                 </h1>
+                <p class="reveal d2 hero-type" aria-label="Web Developer, Computer Systems Servicing NC II, Networking Enthusiast, Problem Solver">
+                    <span class="hero-type__prompt" aria-hidden="true">&gt;</span>
+                    <span id="hero-type" class="hero-type__text" aria-hidden="true"></span><span class="hero-type__caret" aria-hidden="true"></span>
+                </p>
                 <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
                     <strong class="font-medium text-zinc-700 dark:text-zinc-300">IT Student | Aspiring IT Professional</strong>. Passionate about coding, networking, and hardware — building a career in tech through innovation, creation, and elevation.
                 </p>

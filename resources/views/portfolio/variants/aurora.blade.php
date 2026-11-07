@@ -458,6 +458,7 @@
                     <div class="au-meta">September 2025</div>
                     <h3>TESDA CSS / NC2</h3>
                     <p>Computer Systems Servicing, National Certificate II</p>
+                    <a href="{{ asset('images/certificates/nc2.png') }}" target="_blank" rel="noopener noreferrer" class="au-link">View certificate <span aria-hidden="true">↗</span></a>
                 </article>
 
                 <article class="au-glass au-cert au-reveal au-d1">

@@ -412,6 +412,7 @@
                     <span class="tag">September 2025</span>
                     <h3>TESDA CSS / NC2</h3>
                     <p>Computer Systems Servicing, National Certificate II</p>
+                    <a href="{{ asset('images/certificates/nc2.png') }}" target="_blank" rel="noopener noreferrer" class="link">$ view --img →</a>
                 </article>
 
                 <article class="tm-card tm-reveal tm-d1">

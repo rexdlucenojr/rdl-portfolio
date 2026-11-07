@@ -54,7 +54,12 @@
                     </div>
                     <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">TESDA CSS / NC2</h3>
                     <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5">Computer Systems Servicing, National Certificate II</p>
-                    <p class="text-xs uppercase tracking-widest text-zinc-400">September 2025</p>
+                    <p class="text-xs uppercase tracking-widest text-zinc-400 mb-6">September 2025</p>
+                    <a href="{{ asset('images/certificates/nc2.png') }}" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">
+                        View Certificate
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
                 </article>
 
                 <article class="reveal d2 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
@@ -83,6 +88,31 @@
                         View Certificate
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </a>
+                </article>
+
+                <article class="reveal d4 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent md:col-span-2">
+                    <div class="flex flex-col md:flex-row md:items-start gap-6">
+                        <div class="w-12 h-12 shrink-0 flex items-center justify-center bg-zinc-800 dark:bg-zinc-700 rounded-xl group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zM6 15a2.25 2.25 0 100 4.5A2.25 2.25 0 006 15zm12 0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zm-6-6.75v4.5m0 0l-4.5 3.75M12 12.75l4.5 3.75"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-display font-bold text-2xl text-white mb-2">Cisco Networking Academy</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed mb-3">Introduction to Modern AI</p>
+                            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-6">Cisco Networking Academy</p>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="{{ route('credentials.cisco') }}"
+                                    class="inline-flex items-center gap-2 bg-white text-zinc-900 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-200 transition-colors text-sm">
+                                    View Credential
+                                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                </a>
+                                <a href="files/Introduction_to_Modern_AI_certificate_lucenorexjr-913-gmail-com_7aa4436e-9072-411f-8698-ecf1c211164d.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 border border-zinc-600 text-zinc-300 font-medium px-5 py-2.5 rounded-full hover:bg-zinc-700 hover:text-white transition-colors text-sm">
+                                    View Certificate
+                                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
             </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GitHubController;
 use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +10,8 @@ Route::get('/', [PortfolioController::class, 'index'])->name('home');
 Route::get('/projects', fn () => redirect('/#projects'))->name('projects');
 
 Route::view('/cisco-networking-academy', 'portfolio.cisco-networking-academy')->name('credentials.cisco');
+
+Route::get('/repositories', [GitHubController::class, 'index'])->name('repositories');
 
 Route::get('/img/{file}', function (string $file) {
     $path = public_path('img/' . basename($file));

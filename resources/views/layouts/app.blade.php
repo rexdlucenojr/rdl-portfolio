@@ -45,7 +45,7 @@
                 <li><a href="{{ $homeBase }}#education" class="nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Education</a></li>
                 <li><a href="{{ $homeBase }}#skills" class="nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Skills</a></li>
                 <li><a href="{{ $homeBase }}#certifications" class="nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Certifications</a></li>
-                <li><a href="{{ route('projects') }}" class="nav-link nl {{ request()->routeIs('projects') ? 'on' : '' }} text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">My Projects</a></li>
+                <li><a href="{{ $homeBase }}#projects" class="nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">My Projects</a></li>
                 <li><a href="{{ $homeBase }}#contact" class="nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a></li>
             </ul>
 
@@ -75,7 +75,7 @@
                 <li><a href="{{ $homeBase }}#education" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Education</a></li>
                 <li><a href="{{ $homeBase }}#skills" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Skills</a></li>
                 <li><a href="{{ $homeBase }}#certifications" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Certifications</a></li>
-                <li><a href="{{ route('projects') }}" class="block {{ request()->routeIs('projects') ? 'text-accent' : 'text-zinc-700 dark:text-zinc-300 hover:text-accent' }} transition-colors">My Projects</a></li>
+                <li><a href="{{ $homeBase }}#projects" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">My Projects</a></li>
                 <li><a href="{{ $homeBase }}#contact" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Contact</a></li>
                 <li class="pt-2 border-t border-zinc-100 dark:border-zinc-900">
                     <a href="{{ $homeBase }}#contact" class="inline-flex shimmer bg-accent text-white font-medium text-sm px-5 py-2.5 rounded-full">Hire me →</a>

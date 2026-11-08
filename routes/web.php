@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PortfolioController::class, 'index'])->name('home');
 
-Route::view('/projects', 'portfolio.projects')->name('projects');
+Route::get('/projects', fn () => redirect('/#projects'))->name('projects');
 
 Route::view('/cisco-networking-academy', 'portfolio.cisco-networking-academy')->name('credentials.cisco');
 

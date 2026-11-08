@@ -419,6 +419,7 @@ main > section:not(#home) h1::before,
 #education h2::before,
 #skills h2::before,
 #certifications h2::before,
+#projects h2::before,
 #contact h2::before {
     content: '// ';
     color: var(--accent-cyan);

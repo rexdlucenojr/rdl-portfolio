@@ -1,85 +1,72 @@
-@extends('layouts.app')
+@php
+    $projects = [
+        [
+            'title' => 'DCCP Attendance System',
+            'image' => 'img/dccp%20attendance%20system.jpg',
+            'alt' => 'DCCP Attendance System interface preview',
+            'description' => 'A digital attendance platform built for DCCP. Replace this with a short overview of the project.',
+        ],
+        [
+            'title' => 'DCCP QR Code System',
+            'image' => 'img/dccp%20qr%20code%20system.jpg',
+            'alt' => 'DCCP QR Code System interface preview',
+            'description' => 'A QR-based check-in and verification system for DCCP. Replace this with a short overview of the project.',
+        ],
+        [
+            'title' => 'HGS System',
+            'image' => 'img/hgs%20system.jpeg',
+            'alt' => 'HGS System interface preview',
+            'description' => 'A management system built for HGS. Replace this with a short overview of the system and your role.',
+        ],
+        [
+            'title' => 'Vapeshop in Tayum',
+            'image' => 'img/vapeshop%20in%20tayum.png',
+            'alt' => 'Vapeshop in Tayum website preview',
+            'description' => 'A website for Vapeshop in Tayum. Replace this with a short overview of the project.',
+        ],
+    ];
+@endphp
 
-@section('title', 'My Projects — Rex Decuan Luceño Jr.')
-
-@section('content')
-    <section id="projects" class="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
-        <div class="absolute top-32 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-zinc-200/50 dark:bg-zinc-800/30 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
-
-        <div class="relative z-10 max-w-6xl mx-auto px-6">
-            <div class="max-w-3xl mb-14 md:mb-16">
-                <p class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4">Selected work</p>
-                <h1 class="reveal d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
-                    My <span class="text-accent">Projects</span>
-                </h1>
-                <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-2xl">
-                    A collection of systems and websites I have built. Replace each description below with your own project details.
-                </p>
-            </div>
-
-            @php
-                $projects = [
-                    [
-                        'title' => 'DCCP Attendance System',
-                        'image' => 'img/dccp%20attendance%20system.jpg',
-                        'alt' => 'DCCP Attendance System interface preview',
-                        'description' => 'A digital attendance platform built for DCCP. Replace this placeholder with the project\'s purpose, features, and the problem it solves.',
-                    ],
-                    [
-                        'title' => 'DCCP QR Code System',
-                        'image' => 'img/dccp%20qr%20code%20system.jpg',
-                        'alt' => 'DCCP QR Code System interface preview',
-                        'description' => 'A QR-based check-in and verification system for DCCP. Replace this placeholder with your project details.',
-                    ],
-                    [
-                        'title' => 'HGS System',
-                        'image' => 'img/hgs%20system.jpeg',
-                        'alt' => 'HGS System interface preview',
-                        'description' => 'A management system built for HGS. Replace this placeholder with a short overview of the system and your role.',
-                    ],
-                    [
-                        'title' => 'Vapeshop in Tayum',
-                        'image' => 'img/vapeshop%20in%20tayum.png',
-                        'alt' => 'Vapeshop in Tayum website preview',
-                        'description' => 'A website for Vapeshop in Tayum. Replace this placeholder with the project\'s goals, features, and technologies used.',
-                    ],
-                ];
-            @endphp
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                @foreach ($projects as $project)
-                    <article class="reveal card-h group flex flex-col bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 overflow-hidden">
-                        <button type="button"
-                            class="project-shot relative block w-full aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-950 text-left"
-                            data-lightbox-src="{{ $project['image'] }}"
-                            data-lightbox-alt="{{ $project['alt'] }}"
-                            data-lightbox-title="{{ $project['title'] }}"
-                            aria-label="Open larger image of {{ $project['title'] }}">
-                            <img src="{{ $project['image'] }}"
-                                alt="{{ $project['alt'] }}"
-                                loading="lazy"
-                                decoding="async"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
-                            <span class="project-shot__hint" aria-hidden="true">Click to enlarge</span>
-                        </button>
-
-                        <div class="flex flex-col flex-1 p-6">
-                            <h2 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">{{ $project['title'] }}</h2>
-                            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">{{ $project['description'] }}</p>
-                        </div>
-                    </article>
-                @endforeach
-            </div>
+<section id="projects" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-14 text-center">
+            <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Selected work</p>
+            <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">My <span class="text-accent">Projects</span></h2>
         </div>
-    </section>
 
-    <dialog id="project-lightbox" class="project-lightbox" aria-label="Project image preview">
-        <button type="button" class="project-lightbox__close" data-lightbox-close aria-label="Close image preview">&times;</button>
-        <img id="project-lightbox-image" src="" alt="Project image preview">
-        <p id="project-lightbox-caption" class="project-lightbox__caption"></p>
-    </dialog>
-@endsection
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            @foreach ($projects as $project)
+                @php($isDark = $loop->even)
+                <article class="reveal d{{ $loop->iteration }} card-h group flex flex-col rounded-2xl border hover:border-accent overflow-hidden {{ $isDark ? 'bg-zinc-900 dark:bg-zinc-800 border-zinc-800' : 'bg-white dark:bg-zinc-900 border-zinc-100 dark:border-zinc-800' }}">
+                    <button type="button"
+                        class="project-shot relative block w-full aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-950 text-left"
+                        data-lightbox-src="{{ $project['image'] }}"
+                        data-lightbox-alt="{{ $project['alt'] }}"
+                        data-lightbox-title="{{ $project['title'] }}"
+                        aria-label="Open larger image of {{ $project['title'] }}">
+                        <img src="{{ $project['image'] }}"
+                            alt="{{ $project['alt'] }}"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="project-shot__hint" aria-hidden="true">Click to enlarge</span>
+                    </button>
+
+                    <div class="flex flex-col flex-1 p-8">
+                        <h3 class="font-display font-bold text-2xl mb-2 {{ $isDark ? 'text-white' : 'text-zinc-900 dark:text-white' }}">{{ $project['title'] }}</h3>
+                        <p class="text-sm leading-relaxed {{ $isDark ? 'text-zinc-400' : 'text-zinc-500 dark:text-zinc-400' }}">{{ $project['description'] }}</p>
+                    </div>
+                </article>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+<dialog id="project-lightbox" class="project-lightbox" aria-label="Project image preview">
+    <button type="button" class="project-lightbox__close" data-lightbox-close aria-label="Close image preview">&times;</button>
+    <img id="project-lightbox-image" src="" alt="Project image preview">
+    <p id="project-lightbox-caption" class="project-lightbox__caption"></p>
+</dialog>
 
 @push('styles')
     <style>

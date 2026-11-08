@@ -204,6 +204,8 @@
                     </div>
 
                 </div>
+
+                @include('portfolio.partials.repositories')
             </div>
         </div>
     </section>

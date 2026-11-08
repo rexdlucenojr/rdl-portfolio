@@ -11,7 +11,7 @@ Route::get('/projects', fn () => redirect('/#projects'))->name('projects');
 Route::view('/cisco-networking-academy', 'portfolio.cisco-networking-academy')->name('credentials.cisco');
 
 Route::get('/img/{file}', function (string $file) {
-    $path = base_path('img/' . basename($file));
+    $path = public_path('img/' . basename($file));
 
     abort_unless(is_file($path), 404);
 
@@ -21,11 +21,7 @@ Route::get('/img/{file}', function (string $file) {
 })->where('file', '[^/]+');
 
 Route::get('/files/{file}', function (string $file) {
-    $path = base_path('files/' . basename($file));
-
-    if (! is_file($path)) {
-        $path = public_path('files/' . basename($file));
-    }
+    $path = public_path('files/' . basename($file));
 
     abort_unless(is_file($path), 404);
 
